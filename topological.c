@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-int j=0, pop[10], v[10];
+int j=0, pop[10], v[10], stack[10];
 
 void dfs(int source, int n, int a[10][10]){
-    int i, k, top=-1, stack[10];
+    int i, k, top=-1;
     v[source]=1;
     stack[++top] = source+1;
     while(top!=-1){
